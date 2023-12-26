@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <title>Know And Win</title>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="firstContainer">
+        <h1><i class="fa-solid fa-crown"></i> Know And Win <i class="fa-solid fa-crown"></i></h1>
+        <button id="start">Start Quiz</button>
+    </div>
+    <div class="container">
+        <h1><i class="fa-solid fa-crown"></i> Know And Win <i class="fa-solid fa-crown"></i></h1>
+        <div class="quesiton_main_container">
+            <div class="top-header">
+                <div class="questions_numbers"></div>
+                <div class="progresBar"></div>
+                <div class="time"></div>
+            </div>
+            <div class="question_container">
+                <span class="quesiton_number" id="quesiton_number"></span>
+                <h3 class="quesition" id="question"></h3>
+            </div>
+            <div class="options_container">
+                <audio src="audio/correct-reaction.mp3" class="correctAudio"></audio>
+                <audio src="audio/wrong-reaction.mp3" class="wrongAudio"></audio>
+                <button id="select_a" class="select">
+                    <span>A</span>
+                    <p></p>
+                </button>
+                <button id="select_b" class="select">
+                    <span>B</span>
+                    <p></p>
+                </button>
+                <button id="select_c" class="select">
+                    <span>C</span>
+                    <p></p>
+                </button>
+                <button id="select_d" class="select">
+                    <span>D</span>
+                    <p></p>
+                </button>
+            </div>
+        </div>
+        <button class="submit" id="submit">Yes, I'm Sure</button>
+    </div>
+    <div class="finishContainer">
+        <h1><i class="fa-solid fa-crown"></i> Know And Win <i class="fa-solid fa-crown"></i></h1>
+        <span>Score</span>
+        <div class="scoreText">0</div>
+        <div class="buttons">
+            <button class="new_quiz">New Quiz</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
